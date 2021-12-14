@@ -24,7 +24,7 @@ class tutorController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.user.backend.create');
     }
 
     /**

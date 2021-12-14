@@ -15,7 +15,7 @@
 				<div class="card-body pt-0">
 					<!--begin::Table container-->
 					<div class="table-responsive">
-						<button type="button" class="btn btn-primary mb-4 mt-4 float-right">Add</button>
+						<a href="{{route('tutors.create')}}" class="btn btn-primary btn-lg mb-2 mt-4 float-end">Add</a>
 						<!--begin::Table-->
 						<table id="kt_project_users_table" class="table table-row-bordered table-row-dashed gy-4 align-middle fw-bolder">
 							<!--begin::Head-->
