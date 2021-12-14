@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\backend\UserController;
+use App\Http\Controllers\user\UserController;
 use Laravel\Fortify\Http\Controllers\AuthenticatedSessionController;
 
 /*

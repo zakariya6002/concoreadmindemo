@@ -27,6 +27,7 @@
 	<!--begin::Global Stylesheets Bundle(used by all pages)-->
 	<link href="{{asset('plugins/global/plugins.bundle.css')}}" rel="stylesheet" type="text/css" />
 	<link href="{{asset('backend/css/style.bundle.css')}}" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="{{ mix('css/app.css') }}">
 	<!--end::Global Stylesheets Bundle-->
 </head>
 <!--end::Head-->
