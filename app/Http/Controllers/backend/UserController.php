@@ -11,14 +11,14 @@ class UserController extends Controller
     public function UserView()
     {
         $allData = User::all();
-        return view('backend.user.view_user', compact('allData'));
+        return view('admin.user.userTable', compact('allData'));
     }
     public function ViewUser()
     {
-        return view('backend.user.user');
+        return view('admin.user.profile');
     }
     public function doc()
     {
-        return view('backend.document.documents');
+        return view('admin.body.documents');
     }
 }

@@ -1,4 +1,4 @@
-@extends('admin.admin_master')
+@extends('admin.layout')
 
 @section('admin')
 <div class="card card-xl-stretch mb-xl-8">
