@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\jobs;
+namespace App\Http\Controllers\type;
 
-use App\Models\Job;
 use App\Models\SessionType;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class JobsController extends Controller
+class SessionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +15,8 @@ class JobsController extends Controller
      */
     public function index()
     {
-        $jobs = Job::all();
-        return view('admin.jobs.index',compact('jobs'));
+        $type = SessionType::all();
+        return view('admin.jobs.sessions',compact('type'));
     }
 
     /**
@@ -27,8 +26,8 @@ class JobsController extends Controller
      */
     public function create()
     {   
-        $type = SessionType::all();
-        return view('admin.jobs.backend.create',compact('type'));
+        
+        return view('admin.jobs.sessionbackend.create');
     }
 
     /**
@@ -39,16 +38,11 @@ class JobsController extends Controller
      */
     public function store(Request $request)
     {
-        Job::create([
-            'GU' => $request->GU,
-            'SC' => $request->SC,
-            'session_type' => $request->session_type,
-            'address' => $request->address,
-            'city' => $request->city,
-            'province'=> $request->province,
-            'postcode' => $request->postcode
+        SessionType::create([
+            'type' => $request->type,
+            'price'=> $request->price,
         ]);
-        return redirect()->route('jobs.index');
+        return redirect()->route('sessions.index');
     }
 
     /**

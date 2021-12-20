@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Job extends Model
 {
     use HasFactory;
+    protected $fillable = ['GU','SC','session_type','address','city','province','postcode'];
 }

@@ -62,8 +62,10 @@
                             <label class="fs-6 fw-bold mb-2">Type</label>
                             <!--end::Label-->
                             <!--begin::Input-->
-                            <select name="text" class="form-select form-select-solid fw-bolder">
-                                <option value=""></option>
+                            <select name="session_type" class="form-select form-select-solid fw-bolder">
+                                @foreach($type as $s)
+                                <option value="{{$s->type}}">{{$s->type}}</option>
+                                @endforeach
                             </select>
                             <!--end::Input-->
                         </div>
@@ -72,7 +74,7 @@
                                 <label class="fs-6 fw-bold mb-2">Address</label>
                                 <!--end::Label-->
                                 <!--begin::Input-->
-                                <input class="form-control form-control-solid" placeholder="" name="address2" value="" />
+                                <input class="form-control form-control-solid" placeholder="" name="address" value="" />
                                 <!--end::Input-->
                             </div>
                             <!--end::Input group-->
@@ -104,7 +106,7 @@
                                     <label class="required fs-6 fw-bold mb-2">Postal Code</label>
                                     <!--end::Label-->
                                     <!--begin::Input-->
-                                    <input class="form-control form-control-solid" placeholder="" name="postcode" />
+                                    <input class="form-control form-control-solid" placeholder="" type="number" name="postcode" />
                                     <!--end::Input-->
                                 </div>
                                 <!--end::Col-->

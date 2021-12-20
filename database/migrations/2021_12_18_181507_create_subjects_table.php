@@ -15,8 +15,8 @@ class CreateSubjectsTable extends Migration
     {
         Schema::create('subjects', function (Blueprint $table) {
             $table->id();
-            $table->string('subject_code')->nullable();
-            $table->string('subject_name');
+            $table->string('code')->nullable();
+            $table->string('subject/course');
             $table->timestamps();
         });
     }

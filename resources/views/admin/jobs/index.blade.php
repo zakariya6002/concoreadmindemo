@@ -32,17 +32,17 @@
 							<!--end::Head-->
 							<!--begin::Body-->
 							<tbody class="fs-6">
-								
+								@foreach($jobs as $j)
 								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
+									<td>{{$j->id}}</td>
+									<td>{{$j->SC}}</td>
+									<td>{{$j->session_type}}</td>
+									<td>{{$j->created_at}}</td>
 									<td>
 										<a href="#" class="btn btn-light btn-sm">View</a>
 									</td>
 								</tr>
-								
+								@endforeach
 							</tbody>
 							<!--end::Body-->
 						</table>

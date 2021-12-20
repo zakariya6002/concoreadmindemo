@@ -67,9 +67,9 @@
 					</li>
 					<!--end::Nav item-->
 					<!--begin::Nav item-->
-					<li class="nav-item mb-2" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="right" data-bs-dismiss="click" title="Tasks">
+					<li class="nav-item mb-2" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="right" data-bs-dismiss="click" title="Sessions">
 						<!--begin::Nav link-->
-						<a class="nav-link btn btn-icon btn-active-color-primary btn-color-gray-400 btn-active-light" data-bs-toggle="tab" href="#kt_aside_nav_tab_tasks">
+						<a class="nav-link btn btn-icon btn-active-color-primary btn-color-gray-400 btn-active-light" href="{{route('sessions.index')}}">
 							<!--begin::Svg Icon | path: icons/duotune/general/gen048.svg-->
 							<span class="svg-icon svg-icon-2x">
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

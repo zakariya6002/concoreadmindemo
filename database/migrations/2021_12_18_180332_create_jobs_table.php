@@ -17,9 +17,11 @@ class CreateJobsTable extends Migration
             $table->id();
             $table->string('GU'); //grade and university
             $table->string('SC'); //subject and course
+            $table->string('session_type');
             $table->string('address');
             $table->string('city');
             $table->string('province');
+            $table->integer('postcode');
             $table->timestamps();
         });
     }

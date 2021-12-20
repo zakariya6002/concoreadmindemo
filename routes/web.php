@@ -5,6 +5,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\jobs\JobsController;
 use App\Http\Controllers\user\UserController;
 use App\Http\Controllers\user\tutorController;
+use App\Http\Controllers\type\SessionController;
 use Laravel\Fortify\Http\Controllers\AuthenticatedSessionController;
 
 /*
@@ -30,6 +31,7 @@ Route::get('/admin/logout',[AdminController::class,'Logout'])->name('Logout');
 
 Route::resource('tutors',tutorController::class);
 Route::resource('jobs',JobsController::class);
+Route::resource('sessions',SessionController::class);
 
 //user management
 Route::get('users/view',[UserController::class,'UserView'])->name('users');
