@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\jobs;
 
-use App\Http\Controllers\Controller;
+use App\Models\Job;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class JobsController extends Controller
 {
@@ -14,7 +15,8 @@ class JobsController extends Controller
      */
     public function index()
     {
-        //
+        $jobs = Job::all();
+        return view('admin.jobs.index',compact('jobs'));
     }
 
     /**
@@ -24,7 +26,7 @@ class JobsController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.jobs.backend.create');
     }
 
     /**

@@ -15,10 +15,11 @@ class CreateJobsTable extends Migration
     {
         Schema::create('jobs', function (Blueprint $table) {
             $table->id();
-            $table->string('GU');
-            $table->string('SC');
+            $table->string('GU'); //grade and university
+            $table->string('SC'); //subject and course
             $table->string('address');
             $table->string('city');
+            $table->string('province');
             $table->timestamps();
         });
     }

@@ -15,18 +15,16 @@
 				<div class="card-body pt-0">
 					<!--begin::Table container-->
 					<div class="table-responsive">
-						<!-- <a href="{{route('register')}}" class="btn btn-primary btn-lg mb-2 mt-4 float-end">Add</a> -->
+						<a href="{{route('jobs.create')}}" class="btn btn-primary btn-lg mb-2 mt-4 float-end">Add</a>
 						<!--begin::Table-->
 						<table id="kt_project_users_table" class="table table-row-bordered table-row-dashed gy-4 align-middle fw-bolder">
 							<!--begin::Head-->
 							<thead class="fs-7 text-gray-400 text-uppercase">
 								<tr>
-									<th class="min-w-40px">SL</th>
-									<th class="min-w-250px">Tutor Name</th>
-									<th class="min-w-100px">University</th>
+									<th class="min-w-40px">Job Code</th>
+									<th class="min-w-250px">Subject</th>
+									<th class="min-w-100px">Type</th>
 									<th class="min-w-80px">Date</th>
-									<th class="min-w-90px">Amount</th>
-									<th class="min-w-100px">Role</th>
 									<th class="min-w-60px">Action</th>
 
 								</tr>
@@ -34,40 +32,17 @@
 							<!--end::Head-->
 							<!--begin::Body-->
 							<tbody class="fs-6">
-								@foreach($allData as $key => $user)
+								
 								<tr>
-									<td>{{$key+1}}</td>
-									<td>
-										<!--begin::User-->
-										<div class="d-flex align-items-center">
-											<!--begin::Wrapper-->
-											<div class="me-5 position-relative">
-												<!--begin::Avatar-->
-												<div class="symbol symbol-35px symbol-circle">
-													<img alt="" src="{{url('backend/media/avatars/150-3.jpg')}}" />
-												</div>
-												<!--end::Avatar-->
-											</div>
-											<!--end::Wrapper-->
-											<!--begin::Info-->
-											<div class="d-flex flex-column justify-content-center">
-												<a href="{{route('user')}}" class="mb-1 text-gray-800 text-hover-primary">{{$user->name}}</a>
-												<div class="fw-bold fs-6 text-gray-400">{{$user->email}}</div>
-											</div>
-											<!--end::Info-->
-										</div>
-										<!--end::User-->
-									</td>
-									<td>University</td>
-									<td>Apr 15, 2021</td>
-
 									<td></td>
-									<td>{{$user->usertype}}</td>
+									<td></td>
+									<td></td>
+									<td></td>
 									<td>
 										<a href="#" class="btn btn-light btn-sm">View</a>
 									</td>
 								</tr>
-								@endforeach
+								
 							</tbody>
 							<!--end::Body-->
 						</table>

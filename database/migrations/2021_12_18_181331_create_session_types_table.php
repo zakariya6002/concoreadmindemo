@@ -15,7 +15,7 @@ class CreateSessionTypesTable extends Migration
     {
         Schema::create('session_types', function (Blueprint $table) {
             $table->id();
-            $table->string('type');
+            $table->string('type'); //in person or online
             $table->decimal('price');
             $table->timestamps();
         });
